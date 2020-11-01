@@ -1,0 +1,28 @@
+{
+  "name": "observer-geo-api",
+  "version": "1.0.0",
+  "description": "A simple API to serve satelite images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hejnal/observer-geo-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "sample"
+  ],
+  "author": "hejnal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hejnal/observer-geo-api/issues"
+  },
+  "homepage": "https://github.com/hejnal/observer-geo-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "got": "^11.8.0"
+  }
+}

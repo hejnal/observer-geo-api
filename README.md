@@ -9,7 +9,7 @@ You can test the live endpoint here:
 https://observer-geo-api-tvymsgcb3q-nw.a.run.app/sat-images?place=zaragoza&date=2020-09-01
 You should expect to see this image:
 
-<img src ="https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/thumbnails/c1fa8b4e4e2a67f5d2604cadb001d704-8e46e52ddc077b44a500f06b26794be9:getPixels" title="google earth" width="400" height="400">
+<img src ="imgs/sample_response.png" title="google earth" width="400" height="400">
 
 ## How to install locally
 ```bash

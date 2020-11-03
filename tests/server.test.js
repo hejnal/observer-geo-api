@@ -20,11 +20,6 @@ describe('server.routes.satImages', function () {
     });
 
     it('try calling the satImages API (with Date)', function (done) {
-
-        var expected = {
-            'satImages': '1.2.3'
-        }
-
         request(app)
             .get('/sat-images?place=zaragoza&date=2020-10-15')
             .expect('Content-Type', 'text/plain; charset=utf-8')
@@ -36,11 +31,6 @@ describe('server.routes.satImages', function () {
     });
 
     it('try calling the satImages API (with Future Date)', function (done) {
-
-        var expected = {
-            'satImages': '1.2.3'
-        }
-
         request(app)
             .get('/sat-images?place=zaragoza&date=2100-10-15')
             .expect('Content-Type', 'text/html; charset=utf-8')
@@ -52,11 +42,6 @@ describe('server.routes.satImages', function () {
     });
 
     it('try calling the satImages API (with no Date)', function (done) {
-
-        var expected = {
-            'satImages': '1.2.3'
-        }
-
         request(app)
             .get('/sat-images?place=zaragoza')
             .expect('Content-Type', 'text/plain; charset=utf-8')
@@ -68,11 +53,6 @@ describe('server.routes.satImages', function () {
     });
 
     it('try calling the satImages API (wrong place)', function (done) {
-
-        var expected = {
-            'satImages': '1.2.3'
-        }
-
         request(app)
             .get('/sat-images?place=qwertyui')
             .expect('Content-Type', 'text/html; charset=utf-8')

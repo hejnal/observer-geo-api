@@ -13,9 +13,10 @@ module.exports = {
         let today = new Date();
         let date;
 
+        // as the date is optional - use the recent image, if the date is not passed.
         if (req.query.date == undefined) {
             console.log("Date has not been provided, use last week date as a default value.")
-            const defaultDate = dateformat(today.setDate(today.getDate() - 7), "yyyy-mm-dd");       // if no date has been provided use yesterday
+            const defaultDate = dateformat(today.setDate(today.getDate() - 7), "yyyy-mm-dd");       // if no date has been provided last week
             date =  defaultDate;
         } else {
             date = req.query.date;

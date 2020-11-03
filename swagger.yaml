@@ -1,0 +1,38 @@
+swagger: "2.0"
+info:
+  description: "A simple nodeJS app to serve Satellite images"
+  version: "1.0.0"
+  title: "Observer Geo API"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "wojtek.hejna@gmail.com"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "observer-geo-api-tvymsgcb3q-nw.a.run.app"
+schemes:
+- "https"
+paths:
+  /sat-images/:
+    get:
+      summary: "Get the satellite image for a place"
+      description: ""
+      parameters:
+      - in: "query"
+        name: "place"
+        description: "Place to be extracted"
+        required: true
+        type: "string"
+      - in: "query"
+        name: "date"
+        required: false
+        description: "Date of the satellite request."
+        type: "string"
+      responses:
+        "301":
+          description: "Redirect to the image"
+        "404":
+          description: "Not Found"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"

@@ -4,7 +4,8 @@
   "description": "A simple API to serve satelite images",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,18 @@
   "homepage": "https://github.com/hejnal/observer-geo-api#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "got": "^11.8.0"
+    "express-validation": "^3.0.6",
+    "got": "^11.8.0",
+    "dateformat": "^3.0.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^26.6.2",
+    "supertest": "^6.0.0"
   }
 }
